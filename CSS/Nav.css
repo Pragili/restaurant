@@ -1,0 +1,40 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color:  #ff4500;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 1.5rem;
+}
+nav ul li{
+    margin-left: 3rem;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+color: aqua;
+}
+.logo{
+    padding: 2rem;
+    font-size: 25px;
+
+}
+.join{
+    background-color: black;
+    width: 70px;
+    padding: 2rem;
+}
+.join a{
+    text-decoration: none;
+    color: white;
+
+}
+.join a:hover{
+    color: aqua;
+}

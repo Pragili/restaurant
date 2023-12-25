@@ -1,0 +1,459 @@
+body{
+    margin: 0;
+    background-color: #d28770;
+    font-family: cursive;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    max-height: 650px;
+    background-size: cover;
+    z-index: 1;
+}
+
+.carousel-item > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: -120px;
+
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+
+}
+
+.carousel-item > img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 5%;
+  font-size: 24px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-top: -20px;
+  z-index: 3;
+}
+
+.carousel-btn:hover,
+.carousel-btn:focus {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.carousel-btn:focus {
+    outline: 1px solid black;
+}
+
+.prev {
+  left: 1rem;
+}
+
+.next {
+  right: 1rem;
+}
+
+img{
+    width: 100%;
+}
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    z-index: 4;
+    font-family: cursive;
+}
+
+.order-online {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.order-online:hover {
+    background-color: #e0410f; 
+}
+
+
+h1{
+    font-size: 60px;
+}
+button{
+    border-radius: 25px;
+    padding: 1rem;
+}
+button a{
+    text-decoration: none;
+    color: black;
+    
+}
+button a:hover{
+    color: aqua;
+
+
+}
+/* Style for the modal container */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 20%;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+.order-btn {
+    background-color: #763a25;
+    color: white;
+    padding: 10px 80px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.order-btn:hover {
+    background-color: #e0410f;
+}
+
+
+/* Style for the advert section */
+#advert {
+    background-color: #e0410f;
+    color: rgb(255, 255, 255);
+    background-image: url(../IMAGES/foodies-picture.jpg);
+    padding: 90px 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -;
+}
+
+.advert-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.advert-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.advert-content p {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.advert-content button {
+    background-color: white;
+    color: #ff4500;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.advert-content button a {
+    text-decoration: none;
+    color: #ff4500;
+}
+
+.advert-content button:hover {
+    background-color: #e0410f;
+}
+
+
+#hover-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#original-image,
+#hover-image {
+    width: 200px;
+    height: 200px;
+    
+}
+#specialties {
+    margin-top: 150px;
+    margin-bottom: -50px;
+    z-index: 2;
+    font-family: cursive;
+}
+.specialty_title{
+    z-index: 2;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.specialties__container {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.specialty--subtitle {
+    text-align: center;
+}
+
+
+.left-image,
+.middle-image,
+.right-image {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 195px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    
+}
+.left-image,
+.middle-image,
+.right-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/
+    transition: transform 0.5s ease;
+}
+
+.left-image:hover,
+.middle-image:hover,
+.right-image:hover {
+    transform: scale(1.1);
+}
+
+
+.chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff4500;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.chat p {
+    margin: 0;
+}
+
+.chat a {
+    text-decoration: none;
+    color: aqua;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+
+    
+.up a{
+    text-decoration: none;
+    color: black;
+}
+.up a:hover{
+    color: aqua;
+}
+
+#reservation {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.4rem;
+}
+
+#working-hours {
+    display: flex;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+#map{
+    width: 500px;
+    height: 350px;
+    margin-left: 5rem;
+}
+
+.working-hours-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.working-hours-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.working-hours-content p {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+/*reviews*/
+
+#reviews {
+    background-color: antiquewhite;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.reviews-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.review {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.author {
+    font-style: italic;
+    color: #555;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .carousel-item {
+        max-height: 450px; 
+    }
+
+    .carousel-container {
+        margin-bottom: -80px; 
+    }
+
+    .main {
+        font-size: 20px; 
+    }
+}
+
+
+@media only screen and (max-width: 460px) {
+    .carousel-item {
+        max-height: 380px;
+    }
+    .specialties__container{
+        max-width: 200px;
+    }
+
+    .carousel-container {
+        margin-bottom: 300px;
+    }
+
+    .main {
+        font-size: 16px;
+    }
+    .review{
+        
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .carousel-item {
+        max-height: 580px;
+    }
+
+    .carousel-container {
+        margin-bottom: -100px;
+    }
+
+    .main {
+        font-size: 22px;
+    }
+}

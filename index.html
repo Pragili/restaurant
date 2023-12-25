@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/Project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><i class="fa-solid fa-cookie-bite"></i></i>THE OASIS</div>
+        <ul>
+            <li><a href="#">RESERVE</a></li>
+            <li><a href="#">DRINK</a></li>
+            <li><a href="#">EAT</a></li>
+            <li id="about-us"><a href="#">ABOUT US</a></li>
+            <li id="contact-us"><a href="#"><i class="fa-regular fa-circle-user"></i> Contact Us</a></li>
+            
+        </ul>
+
+        <div class="join"><a href="#">Order Now</a></div>
+    </nav>
+
+    <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-item"><img src="../IMAGES/Korean_cuisine_01_ss_1588959085_1295x715px.jpg" alt="Image 1"></div>
+          <div class="carousel-item"><img src="../IMAGES/Pho_BP_Opening-January-2022-scaled.jpg" alt="Image 2"></div>
+          <div class="carousel-item"><img src="../IMAGES/15-Rules-for-Great-Wine-and-Food-Pairings-FT-BLOG1023-f6db46229f8d4e2c81c94f8a85e3c50e.jpg" alt="Image 3"></div>
+        </div>
+        <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-btn next" onclick="nextSlide()">&#10095; </button>
+        <div class="main">
+            <h1>Welcome To The Oasis </h1>
+            <p>Where Flavor Meets Tranquility</p>
+            <button class="order-online" id="openModalBtn"><a href="#">Order Online</a></button>
+        </div>
+    </div>
+
+    <!-- The modal container -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <h2>Order Now</h2>
+            <p>Track and manage your order online.</p>
+            <hr>
+            <button class="order-btn" id="orderDeliveryBtn">Order Delivery</button>
+            <button class="order-btn" id="orderPickupBtn">Order Pickup</button>
+        </div>
+    </div>
+    
+    </section>
+    <section id="specialties" class="">
+        <h2 id="specialty_title" class="specialty--title text-center">Our Speciality</h2>
+        <div class="text-center" aria-hidden="true">★★★★★★★★</div>
+        <ul class="specialties__container">
+            <li>
+                <div id="specialty_subtitle1" class="specialty--subtitle mb-5">Serving with Love</div>
+                <div class="image-container" tabindex="0" aria-label="Focus or hover the following images to perceive our popular dishes.">
+                    <img id="original-image" class="left-image" src="../IMAGES/serving1.jpg" alt="" data-original-src="../IMAGES/serving1.jpg">
+                    <img id="hover-image" class="left-image" src="../IMAGES/serving2.jpg" alt="">
+                </div>
+                
+            </li>
+            <li>
+                <div id="specialty_subtitle1" class="specialty--subtitle mb-5">Tasty Products</div>
+                <div class="image-container">
+                    <img id="original-image" class="middle-image" src="../IMAGES/spanish-food.jpg" alt="" data-original-src="../IMAGES/spanish-food.jpg">
+                    <img id="hover-image" class="middle-image" src="../IMAGES/wide.jpg" alt="">
+                </div>
+                
+            </li>
+            <li>
+                <div id="specialty_subtitle1" class="specialty--subtitle mb-5">Wide Range Flavors</div>
+                <div class="image-container">
+                    <img id="original-image" class="right-image" src="../IMAGES/garlic-crab.jpg" alt="" data-original-src="../IMAGES/garlic-crab.jpg">
+                    <img id="hover-image" class="right-image" src="../IMAGES/tasty.jpg" alt="">
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section id="advert">
+        <div class="advert-content">
+            <h2>Order Food Online</h2>
+            <p>Explore our menu and enjoy the convenience of ordering food online. Delight your taste buds from the comfort of your home!</p>
+            <button class="order-online"><a href="#">Browse Menu</a></button>
+        </div>
+    </section>
+    </div>
+    <div class="chat">
+        <div>
+            <p><i class="fa-regular fa-user"></i> Let's Chat!</p>
+        </div>
+        <div class="up">
+            <a href="#"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
+        
+    </div>
+    <section id="reservation">
+        <div>
+            <h2>FOR RESERVATIONS FROM 2PM TO CLOSING, CALL +234-80-8838-0205</h2>
+        </div>
+    </section>
+    <section id="working-hours">
+        <div class="lekki-map">
+            <img id="map" src="https://www.google.com/maps/d/thumbnail?mid=1iM0hxWAJ_gwhp4KU-t4iU4_67uw&hl=en_US" alt="" srcset="">
+        </div>
+        <div class="working-hours-content">
+            <h2>VISIT US</h2>
+            <p>Lagos,Lekki</p>
+            <hr>
+            <p><b>Hours</b></p>
+            <p>Monday - Friday: 9 AM - 9 PM</p>
+            <p>Saturday: 10 AM - 6 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+    </section>
+    <section id="reviews">
+        <div class="reviews-content">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <p>"Great food and excellent service! Will definitely come back."</p>
+                <p class="author">- John Adam</p>
+            </div>
+            <div class="review">
+                <p>"The atmosphere is fantastic, and the staff is friendly. Highly recommended!"</p>
+                <p class="author">- Jane Smith</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section-about" id="footer-about-us">
+                <h2>About Us</h2>
+                <p>Oasis is a culinary haven located in the heart of Lagos, where exquisite cuisine meets serene tranquility. Our passionate chefs create dishes that promise a sensory journey, while the carefully designed ambiance offers a peaceful escape. Whether for an intimate dinner or a special celebration, Oasis is a destination where every bite tells a story, inviting patrons to experience the enchanting convergence of flavor and tranquility.</p>
+            </div>
+            <div class="footer-section contact" id="footer-contact-us">
+                <h2>Contact Us</h2>
+                <p>Email: eagili03@gmail.com</p>
+                <p>Phone: +234 80-8838-0205</p>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 oasis.com All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/JAVASCRIPT/Project.js"></script>
+</body>
+</html>
